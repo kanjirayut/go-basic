@@ -14,11 +14,27 @@ RUN go mod download
 COPY . .
 
 # Set environment variables
-ENV DB_HOST=pgdb
+# ENV DB_HOST=pgdb
+# ENV DB_PORT=5432
+# ENV DB_NAME=gosampledb
+# ENV DB_USER=kanjirayut
+# ENV DB_PASSWORD=postgres
+# ENV DB_SSLMODE=disable
+# ENV DB_TIMEZONE=UTC
+# ENV DB_CONNECT_TIMEOUT=5
+# ENV JWT_SECRET=verysecret
+# ENV JWT_ISSUER=example.com
+# ENV JWT_AUDIENCE=example.com
+# ENV COOKIE_DOMAIN=localhost
+# ENV DOMAIN=example.com
+# ENV API_KEY=b41447e6319d1cd467306735632ba733
+
+#Render
+ENV DB_HOST=dpg-cttuet8gph6c738n5d60-a
 ENV DB_PORT=5432
-ENV DB_NAME=gosampledb
-ENV DB_USER=kanjirayut
-ENV DB_PASSWORD=postgres
+ENV DB_NAME=gosampledb_0vbc
+ENV DB_USER=gosampledb_user
+ENV DB_PASSWORD=iaGaJgwbbViujQO4ISj2dsFqVh4K8igs
 ENV DB_SSLMODE=disable
 ENV DB_TIMEZONE=UTC
 ENV DB_CONNECT_TIMEOUT=5
