@@ -1,1 +1,1 @@
-# go-sample
+# go-basic
